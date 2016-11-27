@@ -1,0 +1,16 @@
+.clip{
+	width: 400px;
+	position: absolute;
+	margin: 10px;
+	background-color: aquamarine;
+	-webkit-animation: clip 4s infinite;
+	animation: clip 4s infinite;	
+}
+@-webkit-keyframes clip{
+	from{clip: rect(auto,0,auto,0);}
+	to{clip:rect(auto,420px,auto,0);}
+}
+@keyframes clip{
+	from{clip: rect(auto,0,auto,0);}
+	to{clip:rect(auto,420px,auto,0);}
+}

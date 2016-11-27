@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+</head>
+<body>
+	<form action="#action.php" method="get">
+		<label for="name"> Введите ваше Имя</label>	
+		<input type="text" name="username" id="name"><br>
+		<label for="pass"> Введите ваш Пароль</label>	
+		<input type="password" name="pass" id="pass"><br>
+		<textarea name="comment" id="textarea" cols="30" rows="10" placeholder="Введите комментарий"></textarea><br>
+		<input type="radio" name="day" value="Friday"  id="rad1" checked><label for="rad1">Пятница</label>
+		<input type="radio" name="day" value="Saturday" id="rad2" ><label for="rad2" >Суббота </label>
+		<input type="radio" name="day" value="Sunday" id="rad3"><label for="rad3">Воскресенье</label> <br>
+		<input type="checkbox" name="dday" value="Friday" id="chek1"><label for="chek1">Пятница</label>
+		<input type="checkbox" name="dday" value="Saturday" id="chek2"><label for="chek2">Суббота</label>
+		<input type="checkbox" name="dday" value="Sunday" id="chek3"><label for="chek3">Воскресенье</label> <br>
+		<select name="food" size="3"  multiple>
+			<option value="pie">Пирог</option>
+			<option value="bread" selected>Хлеб</option>
+			<option value="cookie">Печенье</option>
+			<optgroup label="Игры">
+				<option value="Doom">DOOM</option>
+				<option value="Dota2">DOTA</option>
+				<option value="Apeha">APEHA</option>
+			</optgroup>
+		</select> <br>
+		<input type="submit" name="submit" value="Отправить">
+		<input type="reset" name="reset" value="Очистить">
+	</form>
+</body>
+</html>

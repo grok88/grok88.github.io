@@ -1,0 +1,430 @@
+@charset "UTF-8";
+/* ╤Б╨▒╤А╨╛╤Б ╤Б╤В╨╕╨╗╨╡╨╣ ╨▒╤А╨░╤Г╨╖╨╡╤А╨░ */
+* {
+  box-sizing: border-box; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.2; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ol {
+  padding-left: 1.4em;
+  list-style: decimal; }
+
+ul {
+  padding-left: 1.4em;
+  list-style: square; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* ╨║╨╛╨╜╨╡╤Ж ╨║╨╛╨┤╨░ ╤Б╨▒╤А╨╛╤Б╨░ ╤Б╤В╨╕╨╗╨╡╨╣ ╨▒╤А╨░╤Г╨╖╨╡╤А╨░ */
+.header_title {
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 115px;
+  position: relative; }
+  .header_title h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 36px;
+    color: #EE8129;
+    padding-bottom: 35px;
+    font-weight: normal; }
+    .header_title h2 span {
+      color: #3070A8;
+      font-family: 'Futura Md BT';
+      font-weight: bold;
+      text-transform: uppercase; }
+  .header_title nav {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .header_title:after {
+    content: '';
+    display: table;
+    clear: both; }
+
+.header_banner {
+  color: #fff;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center; }
+  .header_banner h3 {
+    font: 36px "Myriad Pro";
+    padding-top: 150px; }
+    .header_banner h3 span {
+      font: bold 48px 'Futura Md BT';
+      text-transform: uppercase; }
+  .header_banner p {
+    font: italic 20px calibri;
+    text-shadow: -2px 1px 0 #000;
+    padding: 30px 0 40px 0; }
+  .header_banner input {
+    font: 700 16px 'Open Sans';
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    padding: 20px 60px;
+    margin-bottom: 105px; }
+
+.header-wrapper {
+  background-image: url(../img/nav_background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.header_nav ul {
+  list-style-type: none; }
+  .header_nav ul li {
+    display: inline-block;
+    margin-left: -.4em; }
+    .header_nav ul li a {
+      display: block;
+      text-decoration: none;
+      font: 14px 'Open Sans';
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #989898;
+      padding: 10px 10px 35px 10px;
+      border-bottom: 4px solid transparent; }
+      .header_nav ul li a:hover {
+        color: #3070A8;
+        border-bottom: 4px solid #3070A8; }
+
+.home .homelink {
+  color: #3070A8;
+  border-bottom: 4px solid #3070A8; }
+
+.card-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; }
+
+.card-container:after {
+  content: ' ';
+  display: table;
+  clear: both; }
+
+.card {
+  width: 300px;
+  /*	border:4px solid #ee8129;*/
+  border: 1px solid #E8EAEC;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Trebuchet MS";
+  /*	background-color: #ee8129;*/ }
+
+.card > p {
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+/*-------ITEM--------*/
+.item {
+  background-color: #fff;
+  padding: 15px; }
+
+.item-head {
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 10px; }
+
+.item-price {
+  font-weight: bold;
+  font-size: 72px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  padding-right: 40px;
+  color: #35495A; }
+
+.item-price:before {
+  content: '$';
+  position: absolute;
+  font-weight: bold;
+  font-size: 24px;
+  left: 50px; }
+
+.item-price:after {
+  content: 'Monthly';
+  font-size: 18px;
+  position: absolute;
+  bottom: 15px; }
+
+/*-----ITEM LIST------*/
+.item-list {
+  list-style: none;
+  padding-left: 0; }
+
+.item-list li {
+  padding: 10px 10px 10px 60px;
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 1px;
+  position: relative; }
+
+.item-list li:before {
+  content: url(../img/bullet.gif);
+  position: absolute;
+  left: 30px; }
+
+.item-list li:nth-child(odd) {
+  background-color: #EDF5FD; }
+
+.item-list li:nth-child(even) {
+  background-color: #F5F5F6; }
+
+/*-------ITEM BUTTON---------*/
+.card input {
+  padding: 15px;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #3372AC;
+  border-radius: 5px;
+  border-bottom: 4px solid #02375F;
+  margin-top: 20px; }
+
+.card input:hover {
+  border-bottom-color: transparent; }
+
+/*-------ITEM1 ---------*/
+.item1 {
+  background-color: #2BC2D4; }
+
+/*-------ITEM2 ---------*/
+.item2 {
+  background-color: #EE8129; }
+
+.item2 input {
+  background-color: #EE8129;
+  border-bottom: 4px solid #B04705; }
+
+/*-------ITEM3 ---------*/
+.item3 {
+  background-color: #00B89A; }
+
+.wrapper {
+  background: url(../img/background.png);
+  /*	height: 315px;*/ }
+
+.review {
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: "Trebuchet MS";
+  padding: 0 10px; }
+
+.review h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  padding: 50px 0 40px;
+  color: #3170A8; }
+
+.review-span {
+  color: #EE8129; }
+
+/*-----------Comment--------------*/
+.comment {
+  width: 49%;
+  float: left;
+  position: relative; }
+
+.review .comment:nth-child(even) {
+  margin-right: 2%; }
+
+.review:after {
+  content: ' ';
+  display: table;
+  clear: both; }
+
+.review img {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.comments {
+  margin-left: 130px;
+  padding: 5px;
+  text-overflow: ellipsis;
+  background-color: #fff;
+  margin-bottom: 20px;
+  position: relative; }
+
+.comments header p {
+  font-style: italic;
+  color: #3170A8; }
+
+.comments header p:last-child {
+  float: right;
+  display: inline-block; }
+
+.comments header p:first-child {
+  display: inline-block;
+  font-style: italic;
+  position: relative;
+  padding-left: 10px; }
+
+.comments header p:first-child:before {
+  content: '-';
+  position: absolute;
+  left: 0; }
+
+.comments > p {
+  clear: both;
+  color: #666;
+  padding: 10px; }
+
+.comments header {
+  padding: 5px;
+  border-bottom: 1px dotted #666; }
+
+.comments:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-color: transparent white transparent transparent;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  margin-top: -20px; }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .header_title {
+    height: auto;
+    position: static; }
+    .header_title h2 {
+      position: static;
+      text-align: center;
+      padding-bottom: 15px; }
+    .header_title nav {
+      position: static; }
+    .header_title ul {
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      .header_title ul li {
+        margin-left: 0; }
+        .header_title ul li a {
+          padding: 10px 10px 5px 10px;
+          text-align: center; }
+
+  .header_banner h3 {
+    padding-top: 30px;
+    font: 30px "Myriad Pro"; }
+    .header_banner h3 span {
+      font: bold 34px 'Futura Md BT'; }
+  .header_banner p {
+    padding: 10px 0 20px 0;
+    font-size: 16px; }
+  .header_banner input {
+    margin-bottom: 20px; }
+
+  .card-container {
+    flex-flow: row wrap; }
+
+  .review {
+    padding: 0 10px; }
+    .review h2 {
+      padding: 20px 0; }
+    .review .comment {
+      width: 100%; }
+      .review .comment:nth-child(even) {
+        margin-right: none; } }
+@media (max-width: 480px) {
+  .header_title {
+    height: auto;
+    position: static; }
+    .header_title h2 {
+      position: static;
+      text-align: center;
+      padding-bottom: 5px; }
+    .header_title nav {
+      position: static; }
+      .header_title nav ul {
+        display: flex;
+        flex-flow: row wrap; }
+        .header_title nav ul li {
+          width: 50%; }
+          .header_title nav ul li a {
+            padding: 10px 10px 5px 10px;
+            text-align: center;
+            font-size: 16px; }
+
+  .header_banner h3 {
+    padding-top: 10px;
+    font: 24px "Myriad Pro"; }
+    .header_banner h3 span {
+      font: bold 28px 'Futura Md BT'; }
+  .header_banner p {
+    padding: 10px 0 10px 0;
+    font-size: 20px; }
+  .header_banner input {
+    margin-bottom: 20px; }
+
+  .header-wrapper {
+    background-image: url(../img/nav_background.png); }
+
+  .card-container {
+    flex-flow: row wrap; }
+
+  .review {
+    padding: 0 10px; }
+    .review h2 {
+      padding: 20px 0; }
+    .review img {
+      float: none;
+      position: relative;
+      margin-left: -50px;
+      left: 50%; }
+    .review .comment {
+      width: 100%; }
+      .review .comment:nth-child(even) {
+        margin-right: none; }
+    .review .comments {
+      margin-left: 0;
+      margin-top: 30px; }
+      .review .comments:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border: 20px solid white;
+        border-color: transparent transparent white transparent;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        margin-left: -20px; } }
+
+/*# sourceMappingURL=main.css.map */

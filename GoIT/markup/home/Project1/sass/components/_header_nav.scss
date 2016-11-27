@@ -1,0 +1,28 @@
+// Создаем навигацию в HEader
+.header_nav{
+	ul{
+		list-style-type: none;
+		li{
+			display: inline-block;
+			margin-left: -.4em;
+			a{	
+				display: block;
+				text-decoration: none;
+				font: 14px 'Open Sans';
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				color:#989898;
+				padding: 10px 10px 35px 10px;
+				border-bottom: 4px solid transparent;
+				&:hover{
+					color:$fragment-color;
+					border-bottom: 4px solid $fragment-color;
+				}
+			}
+		}
+	}
+}
+.home .homelink{
+	color:$fragment-color;
+	border-bottom: 4px solid $fragment-color;
+}

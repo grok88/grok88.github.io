@@ -1,0 +1,30 @@
+header{
+	background-color: #AD4CFF;
+	font-family:"Economica";
+	font-weight: bold;
+	font-size: 24px;
+}
+nav{
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+ul li{
+	display: inline-block;
+	
+}
+a{
+	display: block;
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase;
+	padding: 10px;
+}
+a:hover{
+	background-color:#eee;
+	color:#9A9B99;
+}

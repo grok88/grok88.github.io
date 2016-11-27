@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.card-container{
+	max-width: 900px;
+	margin: 0 auto;
+}
+.card-container:after{
+	content:' ';
+	display: table;
+	clear: both;
+}
+.card{
+	width: 300px;
+/*	border:4px solid #ee8129;*/
+	border:1px solid #E8EAEC;
+	border-radius: 5px;
+	text-align: center;
+	font-family: "Trebuchet MS";
+/*	background-color: #ee8129;*/
+	float:left
+}
+ .card > p{
+	color:white;
+	padding: 20px ;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+/*-------ITEM--------*/
+.item{
+	background-color: #fff;
+	padding: 15px;
+}
+.item-head{
+	font-size: 24px;
+	text-transform: uppercase;
+	padding: 10px;
+}
+.item-price{
+	font-weight: bold;
+	font-size: 72px;
+	padding: 10px;
+	position: relative;
+	margin-bottom: 10px;
+	padding-right: 40px;
+	color:#35495A;
+	
+}
+.item-price:before{
+	content:'$';
+	position: absolute;
+	font-weight: bold;
+	font-size: 24px;
+	left:50px;
+}
+.item-price:after{
+	content:'Monthly';
+	font-size: 18px;
+	position: absolute;
+	bottom: 15px;
+}
+/*-----ITEM LIST------*/
+.item-list {
+	list-style: none;
+}
+.item-list li{
+	padding: 10px 10px 10px 60px;
+	text-align: left;
+	font-size: 15px;
+	margin-bottom: 1px;
+	position: relative;
+}
+.item-list li:before{
+	content:url(../img/bullet.gif);
+	position: absolute;
+	left: 30px;
+}
+
+.item-list li:nth-child(odd){
+	background-color:#EDF5FD;
+}
+.item-list li:nth-child(even){
+	background-color: #F5F5F6;
+}
+/*-------ITEM BUTTON---------*/
+.card input{
+	padding:15px;
+	width: 100%;
+	color:white;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #3372AC;
+	border-radius: 5px;
+	border-bottom: 4px solid #02375F;
+	margin-top: 20px;
+}
+.card input:hover{
+	border-bottom-color: transparent;
+}
+/*-------ITEM1 ---------*/
+.item1{
+	background-color: #2BC2D4;
+}
+/*-------ITEM2 ---------*/
+.item2{
+	background-color: #EE8129;
+	
+}
+.item2 input{
+	background-color:#EE8129;
+	border-bottom: 4px solid #B04705;
+	
+}
+/*-------ITEM3 ---------*/
+.item3{
+	background-color: #00B89A;
+}

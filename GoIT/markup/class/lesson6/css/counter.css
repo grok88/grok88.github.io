@@ -1,0 +1,115 @@
+/*--------DIV1--------------*/
+.div1:before{
+	content:attr(data-tittle);		
+}
+/*--------CSS Counters-------*/
+
+.div2 section{
+	counter-reset: jump;
+}
+.div2 a{
+	counter-increment: jump;
+	text-decoration: none;
+	padding: 5px 10px;
+	background-color: darkkhaki;
+}
+.div2 a:hover{
+	color:white;
+}
+.div2 a:before{
+	content:counter(jump);
+	
+}
+/*--------Overlapping CSS Counters-----------*/
+.div3{
+	counter-reset: section box;
+}
+.div3 section{
+	counter-increment: section;
+}
+.div3 .box{
+	counter-increment: box;
+	display: inline-block;
+}
+.div3 section:before{
+	content:'section ' counter(section);
+}
+.div3 .box:before{
+	content:counter(box, upper-roman);
+}
+/*-----------Selection CSS Counter------------*/
+.div4{
+	counter-reset: characters;
+	position: relative;
+}
+.div4 input{
+	 position: absolute;
+  	left: -9999px;
+}
+.div4 input:checked {
+  counter-increment: characters;
+}
+.div4 input:checked + label{
+	background-color: forestgreen;
+	color:darkblue;
+}
+.div4 label{
+	padding: 5px;
+	background-color: firebrick;
+	color:snow;
+	border-radius: 5px;
+}
+.div4  label:hover{
+	background-color: forestgreen;
+	color:darkblue;
+}
+.div4 p::after {
+  content: counter(characters);
+}
+/*-----------CSS Counter Game------------*/
+.div5{
+	counter-reset: game;
+	position: relative;
+}
+.div5 input{
+	 position: absolute;
+  	left: -9999px;
+}
+.div5 #a:checked {
+  counter-increment:game 64;
+}
+.div5 #b:checked {
+  counter-increment:game 16
+}
+.div5 #c:checked {
+  counter-increment:game -32;
+}
+.div5 #d:checked {
+  counter-increment:game 128;
+}
+.div5 #e:checked {
+  counter-increment:game 4;
+}
+.div5 #f:checked {
+  counter-increment:game -8;
+}
+.div5 input:checked + label{
+	background-color: forestgreen;
+	color:darkblue;
+}
+.div5 label{
+	padding: 5px;
+	background-color: firebrick;
+	color:snow;
+	border-radius: 5px;
+}
+.div5  label:hover{
+	background-color: forestgreen;
+	color:darkblue;
+}
+.sum:after{
+	content:"summ= " counter(game);
+}
+#a:checked ~#b:checked ~#c:not(:checked)~#d:not(:checked)~#e:not(:checked)~#f:checked ~.sum:after{
+	 content: ' (hooray!)';
+}

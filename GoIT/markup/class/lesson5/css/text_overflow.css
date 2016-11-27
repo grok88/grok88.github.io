@@ -1,0 +1,7 @@
+.clip{
+	background-color: cornflowerblue;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 5px;
+}

@@ -1,0 +1,27 @@
+.div{
+	width: 200px;
+	height: 200px;
+	background-color: darkorange;
+	margin: 10px;
+}
+.d1{
+	background-color: aquamarine;
+	-webkit-transition: background-color,3s;
+	transition:background-color,3s;
+}
+.d1:hover{
+	background-color: crimson;
+}
+/*----TRANSFORM----*/
+.d2{
+	-webkit-transform:translate(20px 50px);
+	transform:translate(20px , 50px);
+}
+.d3{
+	-webkit-transform: scale(.5);
+	transform: scale(.5);
+}
+.d4{
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}

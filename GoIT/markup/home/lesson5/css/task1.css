@@ -1,0 +1,61 @@
+header{
+	background-color: #AD4CFF;
+	font-family:Impact;
+	font-size: 20px;
+}
+nav{
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+ li{
+	display: inline-block;
+	
+}
+/*-----------TOPMENU---------------*/
+.topmenu{
+	position: relative;
+}
+ .topmenu a{
+	display: block;
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase;
+	padding: 10px 5px;
+}
+.topmenu a:hover{
+	background-color:#eee;
+	color:#9A9B99;
+}
+/*_____________SUBMENU________________*/
+
+.submenu{
+	display: none;
+}
+
+.subm > ul{
+	position: absolute;
+	top:100%;
+	left:0;
+	right:0;
+	background-color:#eee;
+	
+}
+
+.submenu a{
+	color:#9A9B99;
+	font-size: 16px;
+	text-transform:none;
+	font-weight: normal;
+}
+.submenu a:hover{
+	background-color: #AD4CFF;
+	color:white;
+}
+.topmenu li:hover .submenu{
+	display: block;
+}

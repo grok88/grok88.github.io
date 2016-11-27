@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tags</title>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, <del datetime="15.11.2016">consectetur adipisicing</del> <ins>this is beginning</ins> elit. Quas dicta, consectetur sint suscipit dolor. Animi commodi itaque quam nesciunt explicabo pariatur expedita magni, beatae reprehenderit fuga porro illum accusamus neque.</p>
+	<p>Lorem ipsum <dfn title="terminff">Termin</dfn> dolor sit amet, consectetur adipisicing elit. Tempore ut vel saepe inventore eius molestiae nam expedita ab quia in?</p>
+	<button id="openDialog">Открыть окно</button>
+	<dialog>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est vero, cupiditate quibusdam molestiae officia neque recusandae unde repudiandae atque dolor.</p>
+		<p>
+			<button id="closeDialog">Закрыть окно</button>
+		</p>
+	</dialog>
+	<script>
+		var dialog = document.querySelector('dialog');
+		document.querySelector('#openDialog').onclick = function(){
+			dialog.show();
+		}
+		document.querySelector('#closeDialog').onclick = function(){
+			dialog.close();
+		}
+	</script>
+	<pre>
+		var dialog = document.querySelector('dialog');
+		document.querySelector('#openDialog').onclick = function(){
+			dialog.show();
+		}
+		document.querySelector('#closeDialog').onclick = function(){
+			dialog.close();
+		}
+	</pre>
+	<pre><code>
+		var dialog = document.querySelector('dialog');
+		document.querySelector('#openDialog').onclick = function(){
+			dialog.show();
+		}
+		document.querySelector('#closeDialog').onclick = function(){
+			dialog.close();
+		}
+	</code></pre>
+	<samp>
+		&lt;script language=&quot;JavaScript1.3&quot;&gt; JS13 = 1; 
+    &lt;/script&gt;
+	</samp>
+	<p>Lorem ipsum dolor <kbd>Alt</kbd>+ <kbd>Shift</kbd> sit amet, consectetur adipisicing elit. Ut et doloribus nostrum delectus itaque laboriosam ipsa accusantium dolorum quos unde!</p>
+	<p>Lorem ipsum dolor <var>function</var> sit amet, <var>document.</var> consectetur adipisicing elit. Suscipit, sint architecto impedit voluptate vero omnis reprehenderit  <code>document.querySelector('#header')</code> 	accusantium ea eum alias.</p>
+</body>
+</html> 

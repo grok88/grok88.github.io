@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+*{
+	margin: 0;
+	padding: 0;
+}
+*,
+:after,
+:before{
+	box-sizing: border-box;
+}
+html,body{
+	min-height: 100%;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+.wrapper{
+	text-align: center;
+}
+.title{
+	font-size: 2em;
+	text-transform: uppercase;
+	margin:0 auto 1em;
+	text-align: center;
+	padding: 1em 1em .25em 1em;
+	position: relative;
+}
+.title:after{
+    content:' ';
+	width: 240px;
+	background-color:white;
+	position: absolute;
+	height: 4px;
+	top: 100%;
+	right:50%;
+	margin-right: -120px;
+}
+/* Clip text element */
+.clip-text{
+	font-size: 6em;
+	font-weight: bold;
+	line-height: 1;
+	position: relative;
+	display: inline-block;
+	margin: .25em;
+	padding: .5em .75em;
+	text-align: center;
+	-webkit-background-clip:text;	
+	-webkit-text-fill-color: transparent;
+}
+.clip-text:before,
+.clip-text:after{
+	position: absolute;
+	content:' ';
+}
+/* Background */
+.clip-text:before{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:-2;
+	background-image:inherit;
+}
+/* Text Background (black zone) */
+.clip-text:after{
+	z-index: -1;
+	top:.125em;
+	left:.125em;
+	right:.125em;
+	bottom:.125em;
+	background-color: #000;
+}
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+.clip-text_one{
+/*	background-image: url(http://lorempixel.com/480/200/abstract/7);*/
+	background-image: url(../img/7.jpg);
+}
+.clip-text_who{
+/* background-image: url(http://lorempixel.com/480/200/abstract);*/
+	background-image: url(../img/abstract.jpg);
+}
+.clip-text_three{
+	background-image: url(../img/abstractt.jpg);
+}
+/* Change the background position to display letter when the black zone isn't here */
+.no-text-area:after {
+    content: none;
+}
+.no-text-area:before{
+	background-position: -.65em 0;
+}
+.clip-text_five{
+	background-image: url(http://lorempixel.com/480/200/nightlife/5);
+}

@@ -1,0 +1,60 @@
+@media (min-width:481px) and (max-width:768px){
+	.header_title{
+		height: auto;
+		position: static;
+		h2{
+			position: static;
+			text-align: center;
+			padding-bottom: 15px;
+		}
+		nav{
+			position: static;
+		}
+		ul{
+			display: -webkit-flex;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			li{
+				margin-left: 0;
+				a{
+					padding: 10px 10px 5px 10px;
+					text-align: center;
+				}
+			}
+		}
+	}
+	.header_banner{
+		h3{
+			padding-top: 30px;
+			font:30px "Myriad Pro";
+			span{
+				font:bold 34px 'Futura Md BT';
+			}
+		}
+		p{
+			padding: 10px 0 20px 0;
+			font-size: 16px;
+		}
+		input{
+			margin-bottom: 20px;
+		}
+	}
+	
+	.card-container{
+		flex-flow: row wrap;
+	}
+	
+	.review{
+		padding: 0 10px;
+		h2{
+			padding:20px 0;
+		}
+		.comment{
+			width: 100%;
+			&:nth-child(even){
+				margin-right:none;
+			}
+		}
+	}
+}
